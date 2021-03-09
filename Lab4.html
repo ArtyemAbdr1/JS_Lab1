@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>if</title>
+<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+function comp()
+{
+var x, y;
+x=parseInt(prompt("Введите значение х",''));
+y=parseInt(prompt("Введите значение у",'')); 
+if(x<y)
+{
+alert(" Максимальное число - y");
+}
+else if(x>y)
+{
+alert(" Максимальное число - x");
+}
+else
+{
+alert(" Числа равны!");
+}
+}
+function enter_pass()
+{
+var password = "password";
+if(password == prompt("Введите пароль (password): "))
+{
+	alert("Пароль введен верно!");
+}
+else
+{
+	alert("Пароль введен НЕ верно!");
+	enter_pass();
+}
+}
+
+comp();
+setTimeout(enter_pass,1000);
+
+</script>
+<div class="buttonpanel">
+     	<a  href="Lab3.html"><button class="leftbutton">Задание №3</button></a>
+     	<a href="Lab5.html"><button class="rightbutton">Задание №5</button></a>
+     </div>
+</body>
+</html>
