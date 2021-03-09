@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+<head>
+	<title>LabWork7</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+    function sorting(){
+      lessons = new Array("Алгебра","Физика","Информатика","Геометрия","Химия","Биология","Русский язык","Литература","Английский язык","Обществознание","История","Музыка");
+      document.write("Исходный массив: "+lessons);
+      tech  = new Array();
+      human = new Array();
+      tech  = lessons.slice(0,6);
+      human = lessons.slice(6,12);
+      for(var i = 0; i < tech.length; i++)
+      document.write("<tr><td>"+tech[i]+"</td><td>"+human[i]+"</td></tr>"); 
+    }
+  </script>
+</head>
+<body>
+  <main class="main">
+  	<div class="content">
+      <div>
+        <h1>Предметы<h1>
+      </div>
+  		<table class="table">
+        <tr>
+          <th>Точные науки</th>
+          <th>Гуманитарные науки</th>
+        </tr>
+     <script type="text/javascript">
+            sorting();
+     </script>
+     </table>
+     <div class="buttonpanel">
+      <a  href="Lab6.html"><button class="leftbutton">Задание №6</button></a>
+     </div>
+    </div>
+  </main>
+</body>
+</html>
